@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="asset/css/owl.carousel.css">
+    <link rel="stylesheet" href="asset/css/aos.css">
     <link rel="stylesheet" href="asset/css/main.css">
 </head>
 <body>
@@ -34,13 +35,13 @@
             <div class="container">
                 <div class="columns">
                     <div class="column is-7">
-                        <div class="section-title">
+                        <div class="section-title" data-aos="fade-up">
                             <h4>BLOG</h4>
                             <h3>TAP INTO FORWARD THINKING</h3>
                         </div>
                     </div>
                     <div class="column is-5">
-                        <form action="" class="src-form">
+                        <form action="" class="src-form" data-aos="fade-up" data-aos-delay="200">
                             <input type="text" placeholder="Enter keyword">
                             <button class="btn btn-primary boxed">SEARCH</button>
                         </form>
@@ -53,7 +54,7 @@
             <div class="container">
                 <div class="columns is-multiline">
                     <div class="column is-4">
-                        <div class="news-card">
+                        <div class="news-card" data-aos="flip-up">
                             <figure>
                                 <a href="#"><img src="asset/images/bank/pic-4.jpg" alt=""></a>
                             </figure>
@@ -64,7 +65,7 @@
                         </div>
                     </div>
                     <div class="column is-4">
-                        <div class="news-card">
+                        <div class="news-card" data-aos="flip-right" data-aos-delay="200">
                             <figure>
                                 <a href="#"><img src="asset/images/bank/pic-1.jpg" alt=""></a>
                             </figure>
@@ -75,7 +76,7 @@
                         </div>
                     </div>
                     <div class="column is-4">
-                        <div class="news-card">
+                        <div class="news-card" data-aos="flip-down" data-aos-delay="400">
                             <figure>
                                 <a href="#"><img src="asset/images/bank/pic-2.jpg" alt=""></a>
                             </figure>
@@ -86,7 +87,7 @@
                         </div>
                     </div>
                     <div class="column is-4">
-                        <div class="news-card">
+                        <div class="news-card" data-aos="flip-up">
                             <figure>
                                 <a href="#"><img src="asset/images/bank/pic-3.jpg" alt=""></a>
                             </figure>
@@ -97,7 +98,7 @@
                         </div>
                     </div>
                     <div class="column is-4">
-                        <div class="news-card">
+                        <div class="news-card" data-aos="flip-right" data-aos-delay="200">
                             <figure>
                                 <a href="#"><img src="asset/images/bank/pic-5.jpg" alt=""></a>
                             </figure>
@@ -108,7 +109,7 @@
                         </div>
                     </div>
                     <div class="column is-4">
-                        <div class="news-card">
+                        <div class="news-card" data-aos="flip-down" data-aos-delay="400">
                             <figure>
                                 <a href="#"><img src="asset/images/bank/pic-6.jpg" alt=""></a>
                             </figure>
@@ -119,7 +120,7 @@
                         </div>
                     </div>
                     <div class="column is-4">
-                        <div class="news-card">
+                        <div class="news-card" data-aos="flip-up">
                             <figure>
                                 <a href="#"><img src="asset/images/bank/pic-7.jpg" alt=""></a>
                             </figure>
@@ -130,7 +131,7 @@
                         </div>
                     </div>
                     <div class="column is-4">
-                        <div class="news-card">
+                        <div class="news-card" data-aos="flip-right" data-aos-delay="200">
                             <figure>
                                 <a href="#"><img src="asset/images/bank/pic-8.jpg" alt=""></a>
                             </figure>
@@ -141,7 +142,7 @@
                         </div>
                     </div>
                     <div class="column is-4">
-                        <div class="news-card">
+                        <div class="news-card" data-aos="flip-down" data-aos-delay="400">
                             <figure>
                                 <a href="#"><img src="asset/images/bank/pic-9.jpg" alt=""></a>
                             </figure>
@@ -154,7 +155,7 @@
                 </div>
                 <div class="columns">
                     <div class="column is-12 has-text-centered">
-                        <a href="#" class="btn btn-primary">LOAD MORE</a>
+                        <a data-aos="fade-up" href="#" class="btn btn-primary">LOAD MORE</a>
                     </div>
                 </div>
             </div>
@@ -217,9 +218,11 @@
 
     <script src="asset/js/jquery-1.11.0.min.js"></script>
     <script src="asset/js/owl.carousel.min.js"></script>
+    <script src="asset/js/aos.js"></script>
     <script src="asset/js/main.js"></script>
     
     <script>
+        AOS.init();
         $(document).ready(function(){
             
             $(".team-slide").owlCarousel({
