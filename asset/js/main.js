@@ -7,4 +7,9 @@ $(document).ready(function(){
             $('.header').removeClass('fixed');
         }
     });
+
+    $(".burger").click(function(){
+        $(this).toggleClass("active");
+        $(".navs").toggleClass("show");
+    });
 });

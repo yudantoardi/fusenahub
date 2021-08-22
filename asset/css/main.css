@@ -74,8 +74,13 @@ p{
     display: none;
 }
 
+.navs{
+    width: calc(100% - 272px);
+    float: left;
+}
+
 .header .menu{
-    width: calc(100% - 480px);
+    width: calc(100% - 208px);
     float: left;
     text-align: center;
 }
@@ -682,6 +687,7 @@ ul.steps li{
 .brands-slide .item{
     padding: 26px 10px;
     position: relative;
+    height: 160px;
 }
 .brands-slide .item::before{
     content: "";
@@ -695,6 +701,11 @@ ul.steps li{
     transform: translate(-50%,-50%);
     -moz-transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%,-50%);
+}
+.brands-slide .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .team{
@@ -988,7 +999,7 @@ footer .social-media li a.linkedin{background: #005983;}
     position: absolute;
     top: 0;
     left: 0;
-    background: url(../images/blue-trapesium.png) no-repeat left top;
+    background: url(../images/blue-trapesium.png) no-repeat right top;
     background-size: cover;
     padding: 140px 160px 60px 60px;
     pointer-events: none;
@@ -1306,6 +1317,57 @@ footer .social-media li a.linkedin{background: #005983;}
     height: 100%;
 }
 
+.for-mobile{
+    display: none;
+}
+
+.burger{
+    width: 76px;
+    height: 76px;
+    float: right;
+    position: relative;
+}
+.burger span{
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -webkit-transition: all ease-out 0.3s;
+}
+.burger span:first-child{
+    top: 38%;
+}
+.burger span:last-child{
+    top: 62%;
+}
+.burger.active span:first-child{
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(225deg);
+    -moz-transform: translate(-50%,-50%) rotate(225deg);
+    -webkit-transform: translate(-50%,-50%) rotate(225deg);
+}
+.burger.active span:last-child{
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(-225deg);
+    -moz-transform: translate(-50%,-50%) rotate(-225deg);
+    -webkit-transform: translate(-50%,-50%) rotate(-225deg);
+}
+.burger.active span:nth-child(2){
+    opacity: 0;
+}
+.master.light .burger span{
+    background: #141B25;
+}
+
+
+
 /*BULMA OVERIDE*/
 @media screen and (min-width: 1408px){
     .container {
@@ -1313,6 +1375,209 @@ footer .social-media li a.linkedin{background: #005983;}
     }
 }
 
+
+/*MOBILE*/
+@media only screen and (max-width: 768px){
+    .for-mobile{
+        display: block;
+    }
+    .header{
+        height: 76px;
+    }
+    .header .logo{
+        width: 160px;
+        height: 38px;
+    }
+
+    .header .navs{
+        width: 100%;
+        position: absolute;
+        padding: 20px;
+        z-index: 9;
+        top: 76px;
+        left: -100%;
+        background: #141B25;
+        height: calc(100vh - 76px);
+        transition: all ease-out 0.3s;
+        -moz-transition: all ease-out 0.3s;
+        -webkit-transition: all ease-out 0.3s;
+    }
+    .header .navs.show{
+        left: 0;
+    }
+    .header .navs .menu{
+        width: 100%;
+        height: calc(100vh - 107px);
+        overflow-y: auto;
+        padding-left: 10px;
+    }
+    .header .navs .menu li{
+        width: 100%;
+        text-align: left;
+        margin: 0;
+    }
+    .header .navs .menu li a{
+        padding: 15px 0;
+    }
+    .header .navs .menu li.active a{
+        color: #35A0DC;
+    }
+    .header .menu li a:hover::before, .header .menu li.active a::before{
+        width: 30px;
+        left: 0;
+        transform: translateX(0);
+        -moz-transform: translateX(0);
+        -webkit-transform: translateX(0);
+    }
+    .header .btn{
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        width: calc(100% - 60px);
+        margin: 0 30px;
+    }
+    .master.light .header .menu li a{
+        color: #fff;
+    }
+
+    .homepage-cover .text h1{
+        font-size: 40px;
+    }
+
+    .columns{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    p{
+        font-size: 14px;
+    }
+
+    .homepage-cover .text p,
+    .homepage-cover .text{
+        margin-bottom: 0;
+    }
+    .homepage-cover .text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: calc(100% - 40px);
+    }
+    .homepage-cover .down-bt{
+        position: absolute;
+        left: calc(50% - 18px);
+        bottom: 30px;
+        z-index: 2;
+    }
+    .homepage-cover .text h4{
+        margin-bottom: 10px;
+    }
+    .ico-card{
+        margin-bottom: 0;
+    }
+    .section-title h4{
+        font-size: 18px;
+    }
+    .section-title h3, .section-title h3 a{
+        font-size: 36px;
+    }
+
+    .offset-img{
+        width: 100%;
+    }
+    .offset-img.has-icon::before{
+        width: 80px;
+        height: 80px;
+    }
+    .our-works{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .work-card{
+        padding: 30px;
+    }
+    .work-card .text{
+        width: 100%;
+    }
+    .work-card p{
+        margin-bottom: 20px;
+    }
+    .work-card .pic{
+        width: 100%;
+        height: 300px;
+    }
+    .brands-slide{
+        width: 100%;
+    }
+    .team-slide .team-card{
+        width: calc(100% + 20px);
+    }
+    .maps{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .page-header{
+        padding-top: 120px;
+    }
+    .page-header p{
+        margin-top: 0;
+    }
+    .big-img .text{
+        width: 100%;
+        top: auto;
+        bottom: 0;
+        height: auto;
+        padding: 30px;
+    }
+    .big-card-sum ul li{
+        width: 100%;
+        margin-right: 0;
+        float: none;
+        margin-bottom: 10px;
+    }
+    .big-card-sum ul li a{
+        height: 80px;
+        padding: 10px;
+    }
+    .service-wrap figure.featured,
+    .service-wrap:nth-child(odd) figure.featured{
+        width: 100%;
+        margin-left: 0;
+    }
+    .homepage-cover .down-bt.absolute{
+        display: none;
+    }
+    .about-section-2{
+        padding-top: 280px;
+    }
+    .blue-glass-offset{
+        height: auto;
+        padding: 30px;
+    }
+    .blue-glass-offset .text{
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: translate(0,0);
+        -moz-transform: translate(0,0);
+        -webkit-transform: translate(0,0);
+        width: 100%;
+    }
+    .blue-glass-offset .section-title.small h3{
+        font-size: 24px;
+    }
+    .page-header .src-form{
+        margin-top: 0;
+    }
+    .news-grid .column.is-4{
+        padding-right: 0;
+    }
+
+    .dt-service-section-3 .mb-40{
+        margin-bottom: 0 !important;
+    }
+}
 
 
 
