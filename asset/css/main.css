@@ -80,7 +80,7 @@ p{
 }
 
 .header .menu{
-    width: calc(100% - 208px);
+    width: calc(100% - 272px);
     float: left;
     text-align: center;
 }
@@ -127,7 +127,7 @@ p{
 .header .btn{
     width: 148px;
     height: 47px;
-    float: left;
+    float: right;
     margin: 20px 30px;
 }
 
