@@ -239,7 +239,6 @@ p{
 .homepage-cover .text .section-title h1{
     font-size: 64px;
     margin-bottom: 0;
-    font-size: 64px;
 }
 
 .section-title{
@@ -1919,6 +1918,12 @@ footer .social-media li a.linkedin{background: #005983;}
         height: 300px;
     }
     
+    .homepage-cover .text .section-title h1{
+        font-size: 40px;
+    }
+    .homepage-cover .text .section-title h4{
+        font-size: 18px;
+    }
 }
 
 
