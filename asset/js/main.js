@@ -12,4 +12,10 @@ $(document).ready(function(){
         $(this).toggleClass("active");
         $(".navs").toggleClass("show");
     });
+
+    $(".accordion li a").click(function(acc){
+        acc.preventDefault();
+        $(".accordion li").removeClass("active");
+        $($(this).parent()).addClass("active");
+    });
 });

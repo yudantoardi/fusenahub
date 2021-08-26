@@ -548,9 +548,43 @@ ul.steps li{
     width: 100%;
     margin-bottom: 10px;
     padding: 18px 30px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(53,160,220,0.1);
     font-size: 16px;
     color: rgba(255,255,255,0.8);
+}
+
+ul.steps.accordion li a{
+    color: #fff;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+ul.steps.accordion li a i{
+    float: right;
+    transform: translateY(3px);
+    -moz-transform: translateY(3px);
+    -webkit-transform: translateY(3px);
+}
+ul.steps.accordion li{
+    height: 60px;
+    max-height: 60px;
+    transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -webkit-transition: all ease-out 0.3s;
+}
+ul.steps.accordion li:hover{
+    background: rgba(53,160,220,0.3);
+}
+ul.steps.accordion li p{
+    opacity: 0;
+    pointer-events: none;
+}
+ul.steps.accordion li.active{
+    height: auto;
+    max-height: 250px;
+}
+ul.steps.accordion li.active p{
+    opacity: 1;
 }
 
 .offset-img{
@@ -1184,7 +1218,7 @@ footer .social-media li a.linkedin{background: #005983;}
 
 .dt-service-section-1{
     background: #ECEFF5;
-    padding: 100px 0 300px;
+    padding: 100px 0;
 }
 
 .dt-service-section-2{
@@ -1218,7 +1252,7 @@ footer .social-media li a.linkedin{background: #005983;}
 }
 
 .dt-service-section-3{
-    padding: 100px 0;
+    padding: 180px 0 100px;
     background: #ECEFF5;
 }
 
@@ -1232,6 +1266,7 @@ footer .social-media li a.linkedin{background: #005983;}
 }
 .tool-card img{
     width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
@@ -1366,6 +1401,133 @@ footer .social-media li a.linkedin{background: #005983;}
     background: #141B25;
 }
 
+.dt-service-section-5{
+    padding: 100px 0;
+}
+.dt-service-section-5 .offset-img{
+    margin-left: calc((100% - 1200px) / 2);
+    height: 340px;
+    margin-top: 100px;
+}
+.dt-service-section-5 .offset-img.has-icon::before{
+    width: 100px;
+    height: 100px;
+    left: 45%;
+}
+
+.dt-cs-section-1{
+    padding: 100px 0;
+}
+.dt-cs-section-1 .offset-img{
+    margin-left: calc((100% - 1200px) / 2);
+    height: 392px;
+}
+
+.dt-cs-section-2{
+    padding: 180px 0;
+}
+
+.dt-cs-section-3{
+    padding: 100px 0;
+    background: #ECEFF5;
+}
+.dt-cs-section-3 .offset-img{
+    height: 613px;
+    margin-top: -180px;
+}
+
+.dt-cs-section-4{
+    padding: 100px 0;
+}
+
+.result-card{
+    width: 100%;
+    padding: 30px 20px;
+    background: #35A0DC;
+}
+.result-card h3{
+    font-size: 48px;
+    font-weight: 700;
+}
+.result-card p{
+    font-size: 14px;
+    line-height: 150%;
+    color: #fff;
+}
+
+.dt-cs-section-5{
+    padding: 100px 0;
+}
+.pu-card{
+    text-align: center;
+    background: #141B25;
+    padding: 20px 20px 30px;
+    transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -webkit-transition: all ease-out 0.3s;
+    position: absolute;
+    width: calc(100% - 20px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+.dt-cs-section-5 .column{
+    position: relative;
+    min-height: 200px;
+}
+.dt-cs-section-5 .columns:first-child .column{
+    min-height: 0;
+}
+.pu-card img{
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -webkit-transition: all ease-out 0.3s;
+}
+.pu-card h4{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+}
+.pu-card ul{
+    text-align: left;
+    color: #fff;
+    list-style: disc;
+    padding-left: 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -webkit-transition: all ease-out 0.3s;
+    margin-top: 20px;
+}
+.pu-card:hover{
+    background: #35A0DC;
+    min-width: 384px;
+    width: calc(100% - 20px);
+    padding-top: 0;
+    z-index: 9;
+}
+.pu-card:hover img{
+    height: 0;
+    opacity: 0;
+}
+.pu-card:hover h4{
+    transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -webkit-transition: all ease-out 0.3s;
+}
+.pu-card:hover ul{
+    max-height: 200px;
+}
+.pu-card:hover ul li{
+    font-size: 14px;
+    line-height: 200%;
+}
 
 
 /*BULMA OVERIDE*/
