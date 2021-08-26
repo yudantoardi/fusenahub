@@ -1701,7 +1701,7 @@ footer .social-media li a.linkedin{background: #005983;}
     .dark-bg{
         background: #141B25;
     }
-    
+
     .header .navs{
         width: 100%;
         right: -100%;
@@ -1754,7 +1754,8 @@ footer .social-media li a.linkedin{background: #005983;}
     }
 
     .offset-img{
-        width: 100%;
+        width: calc(100% + 25px);
+        height: 300px !important;
     }
     .offset-img.has-icon::before{
         width: 80px;
@@ -1781,10 +1782,10 @@ footer .social-media li a.linkedin{background: #005983;}
         width: 100%;
     }
     .team-slide .team-card{
-        width: calc(100% + 20px);
+        width: calc(100% - 20px);
     }
     .maps{
-        width: 100%;
+        width: calc(100% + 25px);
         margin-top: 0;
     }
 
@@ -1813,8 +1814,12 @@ footer .social-media li a.linkedin{background: #005983;}
     }
     .service-wrap figure.featured,
     .service-wrap:nth-child(odd) figure.featured{
-        width: 100%;
+        width: calc(100% + 25px);
         margin-left: 0;
+        height: 200px;
+    }
+    .service-wrap:nth-child(odd) figure.featured{
+        margin-left: -25px;
     }
     .homepage-cover .down-bt.absolute{
         display: none;
@@ -1869,6 +1874,51 @@ footer .social-media li a.linkedin{background: #005983;}
         float: left;
         padding-bottom: 40px;
     }
+
+    .dt-cs-section-1 .offset-img{
+        margin-left: -25px;
+        margin-bottom: 0;
+    }
+    .dt-cs-section-2{
+        padding: 100px 0;
+    }
+    .dt-cs-section-3 .offset-img{
+        margin-top: 0;
+    }
+    .dt-cs-section-4{
+        padding-top: 180px;
+    }
+    .dt-cs-section-5 .column{
+        margin-bottom: 20px;
+    }
+    .dt-cs-section-5 .column:last-child{
+        margin-bottom: 0;
+    }
+    .pu-card:hover{
+        min-width: 100%;
+    }
+
+    .how-we-works .offset-img{
+        margin-bottom: -100px;
+        margin-top: 40px;
+    }
+
+    .our-works .owl-carousel .item{
+        padding: 0 5px;
+    }
+
+    .work-card .text{
+        padding-right: 0;
+    }
+    .work-card .section-title h4{
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .case-studies-wrapper .big-card .big-img{
+        height: 300px;
+    }
+    
 }
 
 
