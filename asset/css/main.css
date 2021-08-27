@@ -189,6 +189,7 @@ p{
     height: 120%;
     opacity: 0.3;
     position: absolute;
+    object-fit: cover;
     top: 0;
     left: 0;
     right: 0;
@@ -239,7 +240,6 @@ p{
 .homepage-cover .text .section-title h1{
     font-size: 64px;
     margin-bottom: 0;
-    font-size: 64px;
 }
 
 .section-title{
@@ -289,7 +289,8 @@ p{
     padding: 100px 0 180px;
 }
 
-.dark-bg{
+.dark-bg,
+.contact.dark-bg{
     background-color: #141B25;
     background-image: url(../images/glass-1.png), url(../images/glass-2.png);
     background-position: left bottom, right top;
@@ -505,6 +506,9 @@ p{
     transition: all ease-out 0.3s;
     -moz-transition: all ease-out 0.3s;
     -webkit-transition: all ease-out 0.3s;
+}
+.ico-card-2:hover{
+    z-index: 9;
 }
 .ico-card-2:hover .pops{
     max-height: 300px;
@@ -787,6 +791,7 @@ ul.steps.accordion li.active p{
 
 .contact{
     padding: 100px 0 60px;
+    background: #ECEFF5;
 }
 
 .maps{
@@ -824,8 +829,10 @@ ul.steps.accordion li.active p{
     border-color: #35A0DC !important;
     outline: none;
 }
-
 .contact p{
+    line-height: 200%;
+}
+.contact.dark-bg p{
     line-height: 200%;
     color: rgba(255,255,255,0.7);
 }
@@ -837,7 +844,10 @@ ul.steps.accordion li.active p{
     padding-left: 20px;
     margin-bottom: 40px;
 }
-.contact ul li{
+.contact.dark-bg ul li{
+    padding-left: 10px;
+}
+.contact.dark-bg ul li{
     padding-left: 10px;
     color: rgba(255,255,255,0.7);
 }
@@ -1405,7 +1415,7 @@ footer .social-media li a.linkedin{background: #005983;}
     padding: 100px 0;
 }
 .dt-service-section-5 .offset-img{
-    margin-left: calc((100% - 1200px) / 2);
+    margin-left: calc(-1 * ((100vw - 1200px) / 2));
     height: 340px;
     margin-top: 100px;
 }
@@ -1419,7 +1429,7 @@ footer .social-media li a.linkedin{background: #005983;}
     padding: 100px 0;
 }
 .dt-cs-section-1 .offset-img{
-    margin-left: calc((100% - 1200px) / 2);
+    margin-left: calc(-1 * ((100vw - 1200px) / 2));
     height: 392px;
 }
 
@@ -1589,7 +1599,7 @@ footer .social-media li a.linkedin{background: #005983;}
     }
     .header .btn{
         position: absolute;
-        bottom: 30px;
+        bottom: 90px;
         left: 50%;
         width: calc(100% - 60px);
         max-width: 200px;
@@ -1621,6 +1631,13 @@ footer .social-media li a.linkedin{background: #005983;}
         font-size: 12px;
     }
 
+}
+
+/*LAPTOP*/
+@media only screen and (max-width: 1600px){
+    .dt-cs-section-2{
+        padding: 140px 0;
+    }
 }
 
 /*TABLET ONLY*/
@@ -1701,7 +1718,7 @@ footer .social-media li a.linkedin{background: #005983;}
     .dark-bg{
         background: #141B25;
     }
-    
+
     .header .navs{
         width: 100%;
         right: -100%;
@@ -1754,7 +1771,8 @@ footer .social-media li a.linkedin{background: #005983;}
     }
 
     .offset-img{
-        width: 100%;
+        width: calc(100% + 25px);
+        height: 300px !important;
     }
     .offset-img.has-icon::before{
         width: 80px;
@@ -1778,13 +1796,14 @@ footer .social-media li a.linkedin{background: #005983;}
         height: 300px;
     }
     .brands-slide{
-        width: 100%;
+        width: calc(100% + 20px);
+        margin-left: -10px;
     }
     .team-slide .team-card{
-        width: calc(100% + 20px);
+        width: calc(100% - 20px);
     }
     .maps{
-        width: 100%;
+        width: calc(100% + 25px);
         margin-top: 0;
     }
 
@@ -1813,8 +1832,12 @@ footer .social-media li a.linkedin{background: #005983;}
     }
     .service-wrap figure.featured,
     .service-wrap:nth-child(odd) figure.featured{
-        width: 100%;
+        width: calc(100% + 25px);
         margin-left: 0;
+        height: 200px;
+    }
+    .service-wrap:nth-child(odd) figure.featured{
+        margin-left: -25px;
     }
     .homepage-cover .down-bt.absolute{
         display: none;
@@ -1868,6 +1891,99 @@ footer .social-media li a.linkedin{background: #005983;}
     .big-card{
         float: left;
         padding-bottom: 40px;
+    }
+
+    .dt-cs-section-1 .offset-img{
+        margin-left: -25px;
+        margin-bottom: 0;
+    }
+    .dt-cs-section-2{
+        padding: 100px 0;
+    }
+    .dt-cs-section-3 .offset-img{
+        margin-top: 0;
+    }
+    .dt-cs-section-4{
+        padding-top: 180px;
+    }
+    .dt-cs-section-5 .column{
+        margin-bottom: 20px;
+    }
+    .dt-cs-section-5 .column:last-child{
+        margin-bottom: 0;
+    }
+    .pu-card:hover{
+        min-width: 100%;
+    }
+
+    .how-we-works .offset-img{
+        margin-bottom: -100px;
+        margin-top: 40px;
+    }
+
+    .our-works .owl-carousel .item{
+        padding: 0 5px;
+    }
+
+    .work-card .text{
+        padding-right: 0;
+    }
+    .work-card .section-title h4{
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .case-studies-wrapper .big-card .big-img{
+        height: 300px;
+    }
+    
+    .homepage-cover .text .section-title h1{
+        font-size: 40px;
+    }
+    .homepage-cover .text .section-title h4{
+        font-size: 18px;
+    }
+
+    .fsn-ico + h6{
+        line-height: 150%;
+    }
+
+    .ico-card-2 .pops{
+        height: 100%;
+    }
+    .ico-card-2:hover .pops{
+        padding-top: 15px;
+    }
+    .ico-card-2 .pops .fsn-ico-sm{
+        display: none;
+    }
+    .ico-card-2 .pops p{
+        line-height: 150%;
+    }
+
+    .contact .contact-form{
+        margin-bottom: 0;
+    }
+    .contact.dark-bg .contact-form{
+        margin-bottom: -150px;
+    }
+
+    .dt-service-section-5 .offset-img{
+        margin-left: -25px;
+        margin-bottom: 0;
+    }
+    .dt-service-section-3{
+        padding-top: 100px;
+    }
+
+    .tool-card{
+        height: 60px;
+    }
+}
+
+@media only screen and (max-width:359px){
+    .ico-card h6{
+        font-size: 12px;
     }
 }
 
