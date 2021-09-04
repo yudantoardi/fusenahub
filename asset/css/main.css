@@ -237,7 +237,8 @@ p{
     margin-bottom: 0;
     font-family: 'Open Sans', sans-serif;
 }
-.homepage-cover .text .section-title h1{
+.homepage-cover .text .section-title h1,
+.blog-header .section-title h1{
     font-size: 64px;
     margin-bottom: 0;
 }
@@ -263,7 +264,8 @@ p{
     line-height: 200%;
 }
 .section-title h3,
-.section-title h3 a{
+.section-title h3 a,
+.section-title h1{
     font-size: 48px;
     color: #141B25;
     font-family: 'Bebas Neue', cursive;
@@ -284,6 +286,9 @@ p{
 .section-title.small h3 a{
     font-family: 'Bebas Neue', cursive;
 }
+.section-title.no-line::after{
+    display: none;
+}
 
 .what-we-do{
     padding: 100px 0 180px;
@@ -303,7 +308,8 @@ p{
 }
 
 .dark-bg .section-title h3,
-.dark-bg .section-title h3 a{
+.dark-bg .section-title h3 a,
+.dark-bg .section-title h1{
     color: #fff;
 }
 .dark-bg .section-title h3 a:hover{
@@ -1539,6 +1545,86 @@ footer .social-media li a.linkedin{background: #005983;}
     line-height: 200%;
 }
 
+.blog-header{
+    padding: 180px 0 240px;
+}
+.blog-ct{
+    margin-top: -200px;
+    padding-bottom: 100px;
+}
+.blog-ct figure img{
+    width: 100%;
+}
+.blog-ct ~ .news{
+    background: #ECEFF5;
+    padding-top: 100px;
+}
+
+.article{
+    margin-bottom: 30px;
+}
+
+.article blockquote{
+    font-size: 24px;
+    font-weight: 700;
+    padding: 60px;
+    background: #f4f4f4;
+    color: #141B25;
+}
+.article blockquote span{
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #35A0DC;
+}
+
+.share-box{
+    width: 100%;
+    padding: 10px 30px;
+    border: 1px solid #dedede;
+    height: 60px;
+}
+.share-box h6{
+    font-size: 24px;
+    float: left;
+    font-family: 'Bebas Neue', cursive;
+    color: #141B25;
+    margin-top: 2px;
+}
+.share-box ul{
+    float: right;
+    text-align: right;
+}
+.share-box ul li{
+    display: inline-block;
+    margin-left: 6px;
+}
+.share-box ul li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #dedede;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+    padding-top: 7px;
+}
+.share-box ul li a.fb{
+    background: #3B5998;
+}
+.share-box ul li a.tw{
+    background: #00ACED;
+}
+.share-box ul li a.wa{
+    background: #12AF0A;
+}
+.share-box ul li a.ln{
+    background: #00C300;
+}
 
 /*BULMA OVERIDE*/
 @media screen and (min-width: 1408px){
