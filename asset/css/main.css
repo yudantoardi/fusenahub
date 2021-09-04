@@ -2101,6 +2101,9 @@ footer .social-media li a.linkedin{background: #005983;}
         font-size: 14px;
     }
 
+    .share-box{
+        height: 120pxs;
+    }
     .share-box h6{
         width: 100%;
         margin-bottom: 10px;
