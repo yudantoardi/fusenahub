@@ -1548,6 +1548,14 @@ footer .social-media li a.linkedin{background: #005983;}
 .blog-header{
     padding: 180px 0 240px;
 }
+.blog-header .section-title h1{
+    line-height: 120%;
+    margin-bottom: 20px;
+}
+.blog-header .meta{
+    font-size: 16px;
+    color: rgba(255,255,255,0.7);
+}
 .blog-ct{
     margin-top: -200px;
     padding-bottom: 100px;
@@ -2064,6 +2072,47 @@ footer .social-media li a.linkedin{background: #005983;}
 
     .tool-card{
         height: 60px;
+    }
+
+    .blog-header{
+        padding: 140px 0 120px;
+    }
+
+    .blog-header .section-title h1{
+        font-size: 36px;
+        line-height: 120%;
+        margin-bottom: 10px;
+    }
+    .blog-ct{
+        margin-top: -80px;
+    }
+    .blog-ct figure{
+        width: calc(100% + 50px);
+        margin-left: -25px;
+    }
+    .blog-header .meta{
+        font-size: 14px;
+    }
+    .article blockquote{
+        padding: 30px 20px;
+        font-size: 18px;
+    }
+    .article blockquote span{
+        font-size: 14px;
+    }
+
+    .share-box h6{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .share-box ul{
+        float: left;
+        text-align: left;
+        margin-left: -5px;
+    }
+    .share-box ul li{
+        margin-left: 0;
+        margin-right: 6px;
     }
 }
 
