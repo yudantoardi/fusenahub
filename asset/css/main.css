@@ -243,6 +243,10 @@ p{
     margin-bottom: 0;
 }
 
+.homepage-cover .section-title h1{
+    color: #fff;
+}
+
 .section-title{
     width: 100%;
     position: relative;
@@ -551,6 +555,9 @@ p{
 .how-we-works{
     padding: 100px 0 20px;
 }
+.how-we-works .offset-img{
+    height: 724px;
+}
 ul.steps{
     width: 100%;
 }
@@ -719,6 +726,23 @@ ul.steps.accordion li.active p{
     height: 400px;
     float: left;
     margin-bottom: -120px;
+}
+.ratio{
+    width: 100%;
+    height: 0;
+    position: relative;
+    overflow: hidden;
+}
+.ratio img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ratio.ratio-1{
+    padding-top: 100%;
 }
 
 .brands{
@@ -1298,6 +1322,10 @@ footer .social-media li a.linkedin{background: #005983;}
 }
 .about-section-4{
     padding: 0 0 100px;
+}
+
+.about-section-1 .offset-img{
+    height: 496px;
 }
 
 .blue-glass-offset .section-title.small h3{
