@@ -769,6 +769,7 @@ ul.steps.accordion li.active p{
     transform: translate(-50%,-50%);
     -moz-transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%,-50%);
+    display: none;
 }
 .brands-slide .item img{
     width: 100%;
@@ -1664,7 +1665,7 @@ footer .social-media li a.linkedin{background: #005983;}
 
 .case-studies-wrapper .big-img{
     height: 0;
-    padding-top: 56.25%;
+    padding-top: 33%;
 }
 .case-studies-wrapper .big-img img{
     width: 100%;
@@ -2066,10 +2067,6 @@ footer .social-media li a.linkedin{background: #005983;}
         font-size: 16px;
         line-height: 150%;
     }
-
-    .case-studies-wrapper .big-card .big-img{
-        height: 300px;
-    }
     
     .homepage-cover .text .section-title h1{
         font-size: 40px;
@@ -2167,7 +2164,7 @@ footer .social-media li a.linkedin{background: #005983;}
     
     .case-studies-wrapper .big-img{
         height: 0;
-        padding-top: 56.25%;
+        padding-top: 33%;
     }
     .case-studies-wrapper .big-img img{
         width: 100%;
