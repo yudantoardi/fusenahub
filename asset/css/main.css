@@ -715,6 +715,7 @@ ul.steps.accordion li.active p{
 }
 .work-card p{
     color: rgba(255,255,255,0.5);
+    font-size: 14px;
 }
 .work-card .text{
     width: calc(100% - 400px);
@@ -727,6 +728,13 @@ ul.steps.accordion li.active p{
     float: left;
     margin-bottom: -120px;
 }
+.work-card .section-title.small h4{
+    font-size: 14px;
+}
+.work-card .section-title h3, .section-title h3 a{
+    font-size: 30px;
+}
+
 .ratio{
     width: 100%;
     height: 0;
