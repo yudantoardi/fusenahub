@@ -31,6 +31,10 @@ p{
     line-height: 200%;
 }
 
+.ptb-180{
+    padding: 180px 0;
+}
+
 .header{
     width: 100%;
     height: 90px;
@@ -204,7 +208,7 @@ p{
     margin-bottom: 60px;
 }
 .homepage-cover .text h4{
-    font-size: 22px;
+    font-size: 40px;
     font-family: 'Bebas Neue', cursive;
     color: #35A0DC;
     margin-bottom: 30px;
@@ -709,6 +713,7 @@ ul.steps.accordion li.active p{
 }
 .work-card .section-title h3 a{
     color: #fff;
+    font-size: 32px;
 }
 .work-card .section-title::after{
     background: #fff;
@@ -777,7 +782,6 @@ ul.steps.accordion li.active p{
     transform: translate(-50%,-50%);
     -moz-transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%,-50%);
-    display: none;
 }
 .brands-slide .item img{
     width: 100%;
@@ -786,7 +790,7 @@ ul.steps.accordion li.active p{
 }
 
 .team{
-    padding: 100px 0 180px;
+    padding: 100px 0 300px;
     background: #ECEFF5;
 }
 
@@ -1119,7 +1123,7 @@ footer .social-media li a.linkedin{background: #005983;}
 .big-card-sum ul li a{
     display: block;
     padding: 20px;
-    height: 148px;
+    height: 108px;
 }
 .big-card-sum ul li:hover{
     background: #fff;
@@ -1214,6 +1218,18 @@ footer .social-media li a.linkedin{background: #005983;}
 .rel-news figure{
     height: 400px;
     background: #141B25;
+    position: relative;
+}
+.rel-news figure::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(20,27,37,0.5);
+    background: linear-gradient(0deg, rgba(20,27,37,1) 0%, rgba(20,27,37,0) 100%);
+    z-index: 1;
 }
 .rel-news figure img{
     width: 100%;
@@ -1227,6 +1243,7 @@ footer .social-media li a.linkedin{background: #005983;}
     left: 0;
     width: 100%;
     padding: 30px;
+    z-index: 3;
 }
 .rel-news .section-title.small h4,
 .rel-news .section-title.small h4 a{
@@ -1320,7 +1337,7 @@ footer .social-media li a.linkedin{background: #005983;}
 }
 
 .about-section-1{
-    padding: 100px 0 0;
+    padding: 100px 0;
 }
 
 .about-section-2{
@@ -1903,6 +1920,7 @@ footer .social-media li a.linkedin{background: #005983;}
     }
     .homepage-cover .text h4{
         margin-bottom: 10px;
+        font-size: 22px;
     }
     .ico-card{
         margin-bottom: 0;
