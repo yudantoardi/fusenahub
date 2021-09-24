@@ -311,6 +311,7 @@ p{
     background-attachment: fixed, fixed;
     color: #fff;
 }
+
 .dark-bg p{
     color: rgba(255,255,255,0.5);
 }
@@ -894,6 +895,9 @@ ul.steps.accordion li.active p{
 .contact.dark-bg ul li{
     padding-left: 10px;
     color: rgba(255,255,255,0.7);
+}
+.contact.dark-bg{
+    z-index: 3;
 }
 
 .contact-info p{
